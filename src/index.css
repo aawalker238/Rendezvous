@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(234, 234, 234) !important;
+  background-image: linear-gradient(to right, #f4f8fc, #f7fafd, #fafbfe, #fdfdfe, #ffffff);
 }
 
 /*timepicker style*/
@@ -68,12 +68,12 @@ body {
 }
 
 .ui.fixed.menu {
-  background-image: linear-gradient(
-          135deg,
-          rgb(24, 42, 115) 0%,
-          rgb(33, 138, 174) 69%,
-          rgb(32, 167, 172) 89%
-  ) !important;
+  /* background: #91cdff; */
+  /* background-image: linear-gradient(
+    to right, #91cdff, #75beff, #57aefe, #379efc, #008dfa
+  ) !important; */
+  /* background-image: linear-gradient(to right, #afd9fc, #99cefc, #82c3fb, #6ab7fb, #4eacfa); */
+  background-image: radial-gradient(circle, #afd9fc, #99cefc, #82c3fb, #6ab7fb, #4eacfa);
 }
 
 .ui.main.container,

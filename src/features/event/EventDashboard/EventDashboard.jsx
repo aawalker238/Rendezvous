@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Grid } from 'semantic-ui-react';
+import cuid from 'cuid';
+
 import EventList from '../EventList/EventList';
 import EventForm from '../EventForm/EventForm';
 
@@ -73,6 +75,16 @@ class EventDashboard extends Component {
       isOpen: false
     });
   }
+
+  handleCreateEvent = (newEvent) => {
+    newEvent.id = cuid();
+    newEvent.hostPhotoURL = '/assets/user.png';
+    const updatedEvents = [...this.state.events, newEvent];
+    this.setState({
+      events: updatedEvents,
+      isOpen: false
+    });
+  }
   
   render() {
     return (
@@ -87,7 +99,10 @@ class EventDashboard extends Component {
             content="Plan Rendezvous" 
           />
           {this.state.isOpen &&
-            <EventForm handleFormCancel={this.handleFormCancel} />
+            <EventForm
+              handleFormCancel={this.handleFormCancel}
+              handleCreateEvent={this.handleCreateEvent}
+            />
           }
         </Grid.Column>
       </Grid>
