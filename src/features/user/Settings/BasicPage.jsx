@@ -4,7 +4,7 @@ class BasicPage extends Component {
   render() {
     return (
       <div>
-        
+        BASIC
       </div>
     );
   }

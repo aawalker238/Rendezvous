@@ -4,7 +4,7 @@ class AccountPage extends Component {
   render() {
     return (
       <div>
-        
+        ACCOUNT
       </div>
     );
   }

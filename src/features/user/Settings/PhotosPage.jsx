@@ -4,7 +4,7 @@ class PhotosPage extends Component {
   render() {
     return (
       <div>
-        
+        PHOTOS
       </div>
     );
   }
