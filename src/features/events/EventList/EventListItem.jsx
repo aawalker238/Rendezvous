@@ -45,6 +45,10 @@ class EventListItem extends Component {
           <p>{ event.description }</p>
           <Button onClick={handleDeleteEvent(event.id)} as="a" color="red" floated="right" content="Delete"/>
           <Button onClick={handleOpenEvent(event)} as="a" color="teal" floated="right" content="View"/>
+          {/*
+            <Icon className="push-right" color='red' size='big' onClick={handleDeleteEvent(event.id)} link name="trash"  />
+            <Icon className="push-right" color='teal' size='big' onClick={handleOpenEvent(event)} link name="eye"  />
+          */}
         </Segment>
       </Segment.Group>
     );

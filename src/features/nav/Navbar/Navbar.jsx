@@ -33,9 +33,10 @@ class Navbar extends Component {
             <img src="/assets/logo03.svg" alt="logo"/>
             Rendezvous
           </Menu.Item>
-          {authenticated && [
-            <Menu.Item as={NavLink} to="/events" name="Events"/>,
-            <Menu.Item as={NavLink} to="/people" name="People"/>]
+          <Menu.Item as={NavLink} to="/events" name="Events"/>
+          <Menu.Item as={NavLink} to="/test" name="Test"/>
+          {authenticated &&
+            <Menu.Item as={NavLink} to="/people" name="People"/>
           }
           <Menu.Item>
             <Button

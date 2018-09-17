@@ -4,6 +4,7 @@ import cuid from 'cuid';
 
 import EventList from '../EventList/EventList';
 import EventForm from '../EventForm/EventForm';
+import EventQuotesPanel from '../EventQuotesPanel/EventQuotesPanel';
 
 const eventsDashboardData = [
   {
@@ -140,6 +141,7 @@ class EventDashboard extends Component {
               selectedEvent={selectedEvent}
             />
           }
+          <EventQuotesPanel />
         </Grid.Column>
       </Grid>
     );

@@ -83,11 +83,6 @@ p {
 }
 
 .ui.fixed.menu {
-  /* background: #91cdff; */
-  /* background-image: linear-gradient(
-    to right, #91cdff, #75beff, #57aefe, #379efc, #008dfa
-  ) !important; */
-  /* background-image: linear-gradient(to right, #afd9fc, #99cefc, #82c3fb, #6ab7fb, #4eacfa); */
   background-image: radial-gradient(circle, #afd9fc, #99cefc, #82c3fb, #6ab7fb, #4eacfa);
 }
 
@@ -120,5 +115,13 @@ p {
   padding-left: 2em !important;
 }
 
+/* event quotes panel */
+#event-quotes-panel {
+  margin-top: 0;
+}
+
+.push-right {
+  float: right;
+}
 
 

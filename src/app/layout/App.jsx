@@ -10,18 +10,20 @@ import PeopleDashboard from '../../features/user/PeopleDashboard/PeopleDashboard
 import UserDetailsPage from '../../features/user/UserDetails/UserDetailsPage';
 import EventForm from '../../features/events/EventForm/EventForm';
 import HomePage from '../../features/home/HomePage';
+import TestComponent from '../../features/testarea/TestComponent';
 
 class App extends Component {
   render() {
     return [
-      <Switch>
+      <Switch key="__App01">
         <Route exact path="/" component={HomePage} />
       </Switch>,
       <Route
+        key="__App02"
         path="/(.+)"
         render={() => [
-          <Navbar />,
-          <Container className="main">
+          <Navbar key="__App02a" />,
+          <Container key="__App02b" className="main">
             <Switch>
               <Route exact path="/" component={HomePage} />
               <Route path="/events" component={EventDashboard} />
@@ -30,6 +32,8 @@ class App extends Component {
               <Route path="/profile/:id" component={UserDetailsPage} />
               <Route path="/settings" component={SettingsDashboard} />
               <Route path="/createRendezvous" component={EventForm} />
+              
+              <Route path="/test" component={TestComponent} />
             </Switch>
           </Container>
         ]}

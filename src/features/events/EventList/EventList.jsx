@@ -6,7 +6,7 @@ class EventList extends Component {
     const {events, handleOpenEvent, handleDeleteEvent} = this.props;
     return (
       <div>
-        <h1>Event List</h1>
+        <h1>Let's Rendezvous</h1>
         {events.map((event) => (<EventListItem
           key={event.id}
           event={event}
