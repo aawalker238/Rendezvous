@@ -2,7 +2,7 @@
 > I'd have fewer meetings and more **rendezvous**."
 
 This web application is an event planning application built using React, Redux, and Firebase. 
-The application allows users to join in order to create or attend events or choose rather to be a casula user who simply browses events.
+The application allows users to join in order to create or attend events or choose rather to be a casual user who simply browses events.
 
 Possible new future features include:
 1. Event Streaming
